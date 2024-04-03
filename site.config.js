@@ -2,12 +2,12 @@ const CONFIG = {
   // profile setting (required)
   profile: {
     name: "j2yes",
-    image: "/notion-avatar-1709020630331.svg", // If you want to create your own notion avatar, check out https://notion-avatar.vercel.app
+    image: "/notion-avatar-1709042292302.svg", // If you want to create your own notion avatar, check out https://notion-avatar.vercel.app
     role: "Back-end Developer",
-    bio: "I develop everything using node.",
+    bio: "I am interested in anything that reduces information asymmetry.",
     email: "j2yess@gmail.com",
-    linkedin: "morethanmin",
-    github: "morethanmin",
+    linkedin: "j2yes",
+    github: "j2yes",
     instagram: "",
   },
   projects: [
@@ -18,7 +18,7 @@ const CONFIG = {
   ],
   // blog setting (required)
   blog: {
-    title: "notion-blog",
+    title: "j2yes blog",
     description: "welcome!!",
   },
 
@@ -30,7 +30,7 @@ const CONFIG = {
 
   // notion configuration (required)
   notionConfig: {
-    pageId: process.env.NOTION_PAGE_ID,
+    pageId: process.env.NOTION_PAGE_ID || "1f354a38ae2a49f7b004fb5339fd0ae1",
   },
 
   // plugin configuration (optional)
