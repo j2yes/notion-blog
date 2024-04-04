@@ -67,6 +67,15 @@ const CONFIG = {
       appid: "", // Embed Code -> data-app-id value
     },
   },
+  adsense: {
+    enable: true,
+    config: {
+      clientId: "ca-pub-2730756420121198",
+      publisherId: "pub-2730756420121198",
+      slotId: "5502918267",
+      // ads.txt google.com, pub-2730756420121198, DIRECT, f08c47fec0942fa0
+    },
+  },
   isProd: process.env.VERCEL_ENV === "production", // distinguish between development and production environment (ref: https://vercel.com/docs/environment-variables#system-environment-variables)
   revalidateTime: 21600 * 7, // revalidate time for [slug], index
 }
