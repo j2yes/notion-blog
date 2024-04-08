@@ -6,7 +6,7 @@ const CONFIG = {
     role: "Back-end Developer",
     bio: "I am interested in anything that reduces information asymmetry.",
     email: "j2yess@gmail.com",
-    linkedin: "j2yes",
+    linkedin: "jiseob-kim",
     github: "j2yes",
     instagram: "",
   },
@@ -18,14 +18,14 @@ const CONFIG = {
   ],
   // blog setting (required)
   blog: {
-    title: "j2yes blog",
-    description: "welcome!!",
+    title: "j2yes tech blog",
+    description: "Here are some solutions to problems I've encountered in development, as well as other settings and usage.",
   },
 
   // CONFIG configration (required)
   link: "https://j2yes.vercel.app",
   since: 2024, // If leave this empty, current year will be used.
-  lang: "en-US", // ['en-US', 'zh-CN', 'zh-HK', 'zh-TW', 'ja-JP', 'es-ES', 'ko-KR']
+  lang: "ko-KR", // ['en-US', 'zh-CN', 'zh-HK', 'zh-TW', 'ja-JP', 'es-ES', 'ko-KR']
   ogImageGenerateURL: "https://og-image-korean.vercel.app", // The link to generate OG image, don't end with a slash
 
   // notion configuration (required)
