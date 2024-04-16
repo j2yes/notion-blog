@@ -2,9 +2,7 @@ import styled from "@emotion/styled"
 import Link from "next/link"
 
 const NavBar: React.FC = () => {
-  // TODO hide navbar links
-  // const links = [{ id: 1, name: "About", to: "/about" }]
-  const links: any[] = []
+  const links = [{ id: 1, name: "About", to: "/about" }, { id: 2, name: "Reference", to: "/reference" }]
   // @ts-ignore
   return (
     <StyledWrapper className="">
