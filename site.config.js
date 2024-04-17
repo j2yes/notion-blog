@@ -12,8 +12,8 @@ const CONFIG = {
   },
   projects: [
     {
-      name: `notion-blog`,
-      href: "https://github.com/j2yes/notion-blog",
+      name: `notion based web-site builder`,
+      href: "https://quickkasite.godaddysites.com",
     },
   ],
   // blog setting (required)
