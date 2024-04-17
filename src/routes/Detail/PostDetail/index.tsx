@@ -32,7 +32,7 @@ const PostDetail: React.FC<Props> = () => {
           <div>
             <NotionRenderer recordMap={data.recordMap}/>
           </div>
-          {data.type[0] === "Post" && <AdBox/>}
+          {/*{data.type[0] === "Post" && <AdBox/>}*/}
           {data.type[0] === "Post" && (
               <>
                 <Footer/>
