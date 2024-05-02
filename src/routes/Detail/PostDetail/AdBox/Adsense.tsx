@@ -29,7 +29,7 @@ const Adsense: React.FC = () => {
 
   return (
       <>
-        <StyledWrapper id="ads" key={Date.now()}>
+        <StyledWrapper id="ads">
           <script async
                   src={"https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=" + CONFIG.adsense.config.clientId}
                   crossOrigin="anonymous"></script>
