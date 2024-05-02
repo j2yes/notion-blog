@@ -15,8 +15,8 @@ const Adsense: React.FC = () => {
                data-ad-slot={CONFIG.adsense.config.slotId}
                data-ad-format="auto"
                data-full-width-responsive="true"></Ins>
-          <Script>
-            (adsbygoogle = window.adsbygoogle || []).push({});
+          <Script id="adsense-inline">
+            {`(adsbygoogle = window.adsbygoogle || []).push({});`}
           </Script>
         </StyledWrapper>
       </>
