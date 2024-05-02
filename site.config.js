@@ -12,6 +12,10 @@ const CONFIG = {
   },
   projects: [
     {
+      name: `intagram contents downloader`,
+      href: "https://instagram-tools.quickka.site",
+    },
+    {
       name: `notion based web-site builder`,
       href: "https://quickkasite.godaddysites.com",
     },
@@ -80,4 +84,4 @@ const CONFIG = {
   revalidateTime: 60 * 60 * 2, // revalidate time for [slug], index
 }
 
-module.exports = { CONFIG }
+module.exports = {CONFIG}

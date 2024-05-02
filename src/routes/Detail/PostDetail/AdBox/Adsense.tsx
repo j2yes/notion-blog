@@ -7,17 +7,17 @@ const Adsense: React.FC = () => {
   return (
       <>
         <StyledWrapper id="ads">
-          <script async
+          <Script async
                   src={"https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=" + CONFIG.adsense.config.clientId}
-                  crossOrigin="anonymous"></script>
+                  crossOrigin="anonymous"></Script>
           <Ins className="adsbygoogle"
                data-ad-client={CONFIG.adsense.config.clientId}
                data-ad-slot={CONFIG.adsense.config.slotId}
                data-ad-format="auto"
                data-full-width-responsive="true"></Ins>
-          <script>
+          <Script>
             (adsbygoogle = window.adsbygoogle || []).push({});
-          </script>
+          </Script>
         </StyledWrapper>
       </>
   )
