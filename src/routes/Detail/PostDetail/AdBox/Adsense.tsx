@@ -1,23 +1,22 @@
 import {CONFIG} from "site.config"
 import styled from "@emotion/styled"
-import Script from "next/script";
 
 const Adsense: React.FC = () => {
 
   return (
       <>
-        <StyledWrapper id="ads">
-          <Script async
+        <StyledWrapper id="ads" key={Date.now()}>
+          <script async
                   src={"https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=" + CONFIG.adsense.config.clientId}
-                  crossOrigin="anonymous"></Script>
+                  crossOrigin="anonymous"></script>
           <Ins className="adsbygoogle"
                data-ad-client={CONFIG.adsense.config.clientId}
                data-ad-slot={CONFIG.adsense.config.slotId}
                data-ad-format="auto"
                data-full-width-responsive="true"></Ins>
-          <Script id="adsense-inline">
+          <script id="adsense-inline">
             {`(adsbygoogle = window.adsbygoogle || []).push({});`}
-          </Script>
+          </script>
         </StyledWrapper>
       </>
   )
