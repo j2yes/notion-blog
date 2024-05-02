@@ -1,7 +1,31 @@
 import {CONFIG} from "site.config"
 import styled from "@emotion/styled"
+import {useEffect, useRef} from "react";
+import {useRouter} from "next/router";
 
+declare global {
+  interface Window {
+    adsbygoogle: any;
+  }
+}
 const Adsense: React.FC = () => {
+
+  const router = useRouter();
+  const adsLoaded = useRef(false);
+
+  useEffect(() => {
+    const loadAd = () => {
+      if (typeof window !== "undefined" && window.adsbygoogle) {
+        window.adsbygoogle = window.adsbygoogle || [];
+        window.adsbygoogle.push({});
+        adsLoaded.current = true;
+      }
+    };
+
+    if (router.query && !adsLoaded.current) {
+      setTimeout(loadAd, 0);
+    }
+  }, [router.query]);
 
   return (
       <>
@@ -14,9 +38,9 @@ const Adsense: React.FC = () => {
                data-ad-slot={CONFIG.adsense.config.slotId}
                data-ad-format="auto"
                data-full-width-responsive="true"></Ins>
-          <script id="adsense-inline">
-            {`(adsbygoogle = window.adsbygoogle || []).push({});`}
-          </script>
+          {/*<script id="adsense-inline">*/}
+          {/*  {`(adsbygoogle = window.adsbygoogle || []).push({});`}*/}
+          {/*</script>*/}
         </StyledWrapper>
       </>
   )
