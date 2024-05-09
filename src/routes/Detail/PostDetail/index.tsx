@@ -28,7 +28,6 @@ const PostDetail: React.FC<Props> = () => {
               </div>
           )}
           {data.type[0] === "Post" && <PostHeader data={data}/>}
-          {data.type[0] === "Post" && <AdBox/>}
           <div>
             <NotionRenderer recordMap={data.recordMap}/>
           </div>
@@ -37,6 +36,7 @@ const PostDetail: React.FC<Props> = () => {
               <>
                 <Footer/>
                 <CommentBox data={data}/>
+                {data.type[0] === "Post" && <AdBox/>}
               </>
           )}
         </article>
